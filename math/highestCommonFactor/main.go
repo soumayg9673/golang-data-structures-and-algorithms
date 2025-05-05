@@ -31,11 +31,11 @@ func EuclideanAlgorithm(a int, b int) int {
 	return a
 }
 
-func EuclideanAlgorithm1(a int, b int) int {
+func EuclideanAlgorithmRecusive(a int, b int) int {
 	if b == 0 {
 		return a
 	} else {
-		return EuclideanAlgorithm1(b, a%b)
+		return EuclideanAlgorithmRecusive(b, a%b)
 	}
 }
 
@@ -49,6 +49,6 @@ func main() {
 	fmt.Println(EuclideanAlgorithm(100, 200))
 
 	// recursive approach
-	fmt.Println(EuclideanAlgorithm1(4, 6))
-	fmt.Println(EuclideanAlgorithm1(100, 200))
+	fmt.Println(EuclideanAlgorithmRecusive(4, 6))
+	fmt.Println(EuclideanAlgorithmRecusive(100, 200))
 }
