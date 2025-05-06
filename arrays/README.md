@@ -6,3 +6,4 @@
 - [Reverse array](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/arrays/reverse/main.go)
 - [Delete element or index](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/arrays/delete/main.go)
 - [Insert element at index](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/arrays/insert/main.go)
+- [Largest element](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/arrays/largestElement/main.go)
