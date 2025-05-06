@@ -25,4 +25,16 @@ func main() {
 	a7 := make([]int, 3)
 	fmt.Println(a7, len(a7))
 
+	arr1 := [6]int{10, 11, 12, 13, 14, 15}
+	myslice := arr1[2:4]
+
+	fmt.Printf("myslice = %v\n", myslice)
+	fmt.Printf("length = %d\n", len(myslice))
+	fmt.Printf("capacity = %d\n", cap(myslice))
+
+	myslice = arr1[4:]
+	fmt.Printf("myslice = %v\n", myslice)
+	fmt.Printf("length = %d\n", len(myslice))
+	fmt.Printf("capacity = %d\n", cap(myslice))
+
 }
