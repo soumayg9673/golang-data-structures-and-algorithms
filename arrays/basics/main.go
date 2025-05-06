@@ -37,4 +37,17 @@ func main() {
 	fmt.Printf("length = %d\n", len(myslice))
 	fmt.Printf("capacity = %d\n", cap(myslice))
 
+	a8 := [5]int{0: 1, 2: 3} // fixed size array and initialize indexes with values
+	fmt.Println(a8, len(a8))
+
+	a8[1] = 2 // success
+	fmt.Println(a8, len(a8))
+
+	a9 := []int{}
+	fmt.Println(a9, len(a9))
+
+	// a9[0] = 1       // error: index out of range
+	a9 = append(a9, 1) // success
+	fmt.Println(a9, len(a9))
+
 }
