@@ -7,3 +7,4 @@
 - [Palindrome](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/recursion/palindrome/main.go)
 - [Sum of Digits](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/recursion/sumofDigits/main.go)
 - [Sum of n Natural Numbers](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/recursion/sumNaturalN/main.go)
+- [Binary Number](https://github.com/soumayg9673/golang-data-structures-and-algorithms/blob/main/recursion/binary/main.go)
