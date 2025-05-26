@@ -8,7 +8,7 @@ func insertInArray(arr []int, x, pos int) []int {
 	if len(arr) != pos {
 		arr = append(arr, arr[len(arr)-1])
 	}
-	for i := len(arr) - 1; i >= pos; i-- {
+	for i := len(arr) - 1; i > pos; i-- {
 		arr[i] = arr[i-1]
 	}
 	if len(arr) != pos {
@@ -25,4 +25,7 @@ func main() {
 
 	arr2 := []int{1, 2, 3, 4}
 	fmt.Println(insertInArray(arr2, 5, 5))
+
+	arr3 := []int{1, 2, 3, 4}
+	fmt.Println(insertInArray(arr3, 0, 1))
 }
