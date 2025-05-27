@@ -30,7 +30,7 @@ func checkPair(arr []int, x int) bool {
 }
 
 func checkTriplet(arr []int, x int) bool {
-	for i := range len(arr) - 3 {
+	for i := range len(arr) - 2 {
 		if checkPair(arr[i+1:], x-arr[i]) {
 			return true
 		}
