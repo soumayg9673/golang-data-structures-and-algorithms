@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 /*
+	Stable algorithm
 	For ascending order: arr[j] > arr[j+1]
 	For descending order: arr[j] < arr[j+1]
 */
