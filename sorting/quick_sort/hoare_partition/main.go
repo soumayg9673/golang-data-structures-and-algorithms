@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // Considering the pivot element as the first element of the array
 func hoarePartition(arr []int, l, h int) int {
 	p := arr[l]
@@ -16,8 +18,17 @@ func hoarePartition(arr []int, l, h int) int {
 	}
 }
 
+func quickSort(arr []int, l, h int) {
+	if l < h {
+		p := hoarePartition(arr, l, h)
+		quickSort(arr, l, p)
+		quickSort(arr, p+1, h)
+	}
+}
+
 func main() {
 	arr := []int{5, 3, 8, 4, 2, 7, 1, 10}
 
-	hoarePartition(arr, 0, len(arr)-1)
+	quickSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
 }
